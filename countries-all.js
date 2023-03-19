@@ -8,7 +8,7 @@ var COUNTRIES = [
           "official": "Guadeloupe",
           "common": "Guadeloupe"
         }
-      }
+      } 
     },
     "tld": [
       ".gp"
