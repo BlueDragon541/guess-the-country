@@ -11,7 +11,10 @@ let guessesLeft;
 let country;
 
 function randomCountry() {
-  // TODO: pick a random country from the COUNTRIES variable and return it
+  console.log('There are ${COUNTIRES.length} countries in the list');
+  let randomCountryIndex = Math.floor(Math.random() * COUNTRIES.length);
+  console.log('The randomCountryIndex is: ${randomCountryIndex');
+  return COUNTRIES[randomCountryIndex]
 
 }
 
@@ -20,7 +23,7 @@ function startGame() {
 
   // Initialize the game state
   country = randomCountry();
-  // TODO: what field of country to set 'answer' to?
+  answer = country.name.common;
   guess = [];
   guessesLeft = 10;
   console.log("the answer is:", answer);
