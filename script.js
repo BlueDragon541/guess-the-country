@@ -12,6 +12,7 @@ let country;
 
 function randomCountry() {
   // TODO: pick a random country from the COUNTRIES variable and return it
+
 }
 
 function startGame() {
