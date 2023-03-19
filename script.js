@@ -23,7 +23,7 @@ function startGame() {
 
   // Initialize the game state
   country = randomCountry();
-  answer = country.name.common;
+  answer = country.name.common.toUpperCase();
   guess = [];
   guessesLeft = 10;
   console.log("the answer is:");
@@ -53,6 +53,7 @@ function showHint() {
   let img = document.createElement("img");
   // TODO: How to read image url from country data?
   // img.src = ???
+  img.src = country.flags.png;
   img.style.border = "thin solid grey";
   card.appendChild(img);
 
@@ -62,6 +63,8 @@ function showHint() {
   // Continent(s), population, area, capital(s), etc
   // p.innerHTML += `Continent: ...<br>`;
   // p.innerHTML += `Population: ...<br>`;
+  p.innerHTML += `Capital: ${country.capital[0]}<br>`;
+  p.innerHTML += `Population ${country.population}<br>`;
   card.appendChild(p);
 
   cardContainerDiv.appendChild(card); // create and add the card to the container
