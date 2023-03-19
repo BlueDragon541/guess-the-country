@@ -26,7 +26,8 @@ function startGame() {
   answer = country.name.common;
   guess = [];
   guessesLeft = 10;
-  console.log("the answer is:", answer);
+  console.log("the answer is:");
+  console.log(answer);
   for (let i = 0; i < answer.length; i++) {
     // TODO: how to handle letters not on our keyboard?
     if (answer[i] === " ") {
