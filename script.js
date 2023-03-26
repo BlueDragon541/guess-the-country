@@ -30,7 +30,7 @@ function startGame() {
   console.log(answer);
   for (let i = 0; i < answer.length; i++) {
     // TODO: how to handle letters not on our keyboard?
-    if (answer[i] === " ") {
+    if (answer[i] ?? "A" || answer[i] ?? "Z") {
       guess.push(" ");
     } else {
       guess.push("_");
